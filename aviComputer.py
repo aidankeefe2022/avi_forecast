@@ -32,10 +32,13 @@ while user_input != 000:
     numToAvi = {1:avi_bridger, 2:avi_lionhead, 3:avi_centennials, 4:avi_cooke_city,
             5:avi_southern_madison,6:avi_northern_madison,7:avi_northern_gallatin,8:avi_southern_gallatin}
     user_input = input("1: avi_bridger \n2:avi_lionhead \n3:avi_centennials\n4:avi_cooke_city\n5:avi_southern_madison\n6:avi_northern_madison\n7:avi_northern_gallatin\n8:avi_southern_gallatin")
+    try:
+        recentSnow(numToAvi[int(user_input)])
+        risk(numToAvi[int(user_input)])
+    except:
+        print("re-enter")
 
-    recentSnow(numToAvi[int(user_input)])
-    risk(numToAvi[int(user_input)])
-            
+
 
 #%%
 
