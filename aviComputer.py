@@ -28,7 +28,7 @@ def windDirection(input):
     to_return.append(most_common_dir)
     return to_return
 
-#is wind speed in the in recent days at speed that wouuld result in wind slab
+#is wind speed in the in recent days at speed that would result in wind slab
 def windSpeed(input):
     wind_speed = input['Wind H'].tail(3).tolist()
     WSW = False #wind slab wind
