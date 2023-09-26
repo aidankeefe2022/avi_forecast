@@ -52,8 +52,8 @@ def scraper(URL,URLNOAA,LOCC):
     tocsv['Date'] = datetime.datetime.now().date()
     tocsv['New Snow'] = int(data[0][0])
     try:
-        tocsv['Wind L'] = int(data[0][1])
-        tocsv['Wind H'] = int(data [0][2])
+        tocsv['Wind L'] = data[0][1]
+        tocsv['Wind H'] = data [0][2]
     except:
         tocsv['Wind L'] = 'NA'
         tocsv['Wind H'] = 'NA'
