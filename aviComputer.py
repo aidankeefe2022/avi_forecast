@@ -54,6 +54,12 @@ while user_input != 000:
     try:
         dataframe = numToAvi[int(user_input)]
         print("REPORT \n")
+        tempReport(dataframe)
+        print(windSpeed(dataframe))
+        #if (windSpeed(dataframe)):
+          #  print("there is chance of windslab: \n")
+           # WDL = windDirection(dataframe) #wind direction list
+           # print ("recent direction" + WDL[0] + "common direction" + WDL[1])
 
     except:
         print("re-enter")
